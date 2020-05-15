@@ -1,0 +1,11 @@
+{
+    "author": "Czarek Nakamoto",
+    "email": "https://mrcyjanek.net",
+    "website": "https://oldpc.mrcyjanek.net/blog/",
+    "version": "1.0.0",
+    "releaseDate": "2020-05-16",
+    "license": "WTFPL",
+    "compatible": "3.x",
+    "notes": "It couldn't be more minimal"
+}
+

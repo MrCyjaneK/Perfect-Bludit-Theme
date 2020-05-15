@@ -1,0 +1,21 @@
+body {
+    margin:40px auto;            /* Center it */
+    background-color: black;
+    color: white;                
+    font-size: 150%;             /* Smaller type works well for print, not the screen. */
+    max-width:650px              /* If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book. */
+}
+a {
+   text-decoration: none;        /* No <strike>*/
+} 
+a:link    {color: chartreuse;}   /* unvisited link */
+a:visited {color: chartreuse;}   /* visited link */
+a:hover   {color: cyan;}         /* mouse over link */
+a:active  {color: red;}          /* selected link */
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
