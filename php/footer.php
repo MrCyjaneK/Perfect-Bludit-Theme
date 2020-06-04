@@ -2,11 +2,11 @@
 <pre><code>Proudly powered by <a href="https://oldpc.mrcyjanek.net/" target="_blank">OldPC</a>, made by <a href="https://mrcyjanek.net" target="_blank">Czarek Nakamoto</a></code></pre>
 <?php
     // Class name of the plugin
-    $className = 'pluginRSS';
+//    $className = 'pluginRSS';
 
-    if (pluginActivated($className)) {
-        echo '<a href="'. DOMAIN .'/rss.xml" target="_blank">rss</a> &ndash;';
-    }
+//    if (pluginActivated($className)) {
+//        echo '<a href="'. DOMAIN .'/rss.xml" target="_blank">rss</a> &ndash;';
+//    }
 ?>
 
 <!-- Pagination -->

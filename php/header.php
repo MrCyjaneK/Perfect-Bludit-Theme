@@ -20,6 +20,12 @@
 <?php if ($site->dribbble()): ?><a href="<?php echo $site->dribbble() ?>" target="_blank">dribbble</a>
 <?php endif ?>
 <?php if ($site->VK()): ?><a href="<?php echo $site->VK() ?>" target="_blank">VK</a>
-<?php endif ?></code></pre>
+<?php endif ?><?php
+$className = 'pluginRSS';
+
+if (pluginActivated($className)) {
+    echo '<a href="'. HTML_PATH_ROOT .'/rss.xml" target="_blank">rss</a> &ndash;';
+}
+?></code></pre>
   </nav>
-<pre><code><h1><a href="/blog/" title="<?php echo $site->title() ?>"><?php echo $site->title() ?></a></h1><p><?php echo $site->slogan() ?></p><hr /></code></pre>
+<pre><code><h1><a href="<?php HTML_PATH_ROOT ?>" title="<?php echo $site->title() ?>"><?php echo $site->title() ?></a></h1><p><?php echo $site->slogan() ?></p><hr /></code></pre>
