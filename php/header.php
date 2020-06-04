@@ -24,7 +24,7 @@
 $className = 'pluginRSS';
 
 if (pluginActivated($className)) {
-    echo '<a href="'. HTML_PATH_ROOT .'/rss.xml" target="_blank">rss</a> &ndash;';
+    echo '<a href="'. HTML_PATH_ROOT .'/rss.xml" target="_blank">rss</a>';
 }
 ?></code></pre>
   </nav>
