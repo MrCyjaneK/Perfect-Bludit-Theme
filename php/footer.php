@@ -15,8 +15,8 @@
         <span style="float:right;"> Next --> </span>
     <?php endif; ?>
 </nav>
-<?php endif ?>
 <br />
 <hr />
+<?php endif ?>
 
 Proudly powered by <a href="https://oldpc.mrcyjanek.net/" target="_blank">OldPC</a>, made by <a href="https://mrcyjanek.net" target="_blank">Czarek Nakamoto</a>
