@@ -47,7 +47,8 @@
     <?php $i = -1; ?>
     <?php foreach ($categories->db as $key => $value) { ?>
         <?php if ($i++ % 3 == 2) echo '<br />'; ?>
-        <a href="<?= HTML_PATH_ROOT.'/'.$key; ?>"> <?= $value['name']; ?> </a> | 
+        <a href="<?= DOMAIN_CATEGORIES.$key; ?>"> <?= $value['name']; ?> </a>
+       <?php if ($i % 3 != 2 && $i+1 != count($categories->db)) echo '|'; ?>
     <?php } ?>
 </center>
 <hr />
