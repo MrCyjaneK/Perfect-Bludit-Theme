@@ -1,4 +1,3 @@
-
 <!-- overall big site header image - make it as wide as your body width is set to -->
 <nav style="float:right;">
     <?php if ($site->twitter()): ?>
@@ -41,5 +40,14 @@
 <h1>
     <a href="<?= HTML_PATH_ROOT ?>" title="<?php echo $site->title() ?>"><?php echo $site->title() ?></a>
 </h1>
+
 <p><?php echo $site->slogan() ?></p>
+<hr />
+<center>
+    <?php $i = -1; ?>
+    <?php foreach ($categories->db as $key => $value) { ?>
+        <?php if ($i++ % 3 == 2) echo '<br />'; ?>
+        <a href="<?= HTML_PATH_ROOT.'/'.$key; ?>"> <?= $value['name']; ?> </a> | 
+    <?php } ?>
+</center>
 <hr />

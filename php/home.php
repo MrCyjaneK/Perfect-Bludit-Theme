@@ -1,4 +1,4 @@
-<pre><code><?php if ($site->slogan()): ?><h1><?php echo ucfirst($url->slug()); ?></h1><?php
+<?php if ($site->slogan()): ?><h1><?php echo ucfirst($url->slug()); ?></h1><?php
 $description = $site->description();
 if ($WHERE_AM_I == 'category') {
     try {
@@ -25,4 +25,4 @@ if(strlen($page->description())>0 ){
         echo "... ";
     }
 }
-?><a href="<?php echo $page->permalink(); ?>"><?php echo $L->get('Read more'); ?></a><?php Theme::plugins('pageEnd'); ?></article><hr /><?php endforeach; ?></code></pre>
+?><a style="float:right;" href="<?php echo $page->permalink(); ?>"><?php echo $L->get('Read more'); ?></a><?php Theme::plugins('pageEnd'); ?></article><hr /><?php endforeach; ?>
