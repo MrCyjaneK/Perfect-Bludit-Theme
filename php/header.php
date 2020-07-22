@@ -33,7 +33,7 @@
     <?php
     $className = 'pluginRSS';
     if (pluginActivated($className)) {
-        echo '<a href="'. HTML_PATH_ROOT .'/rss.xml" target="_blank">rss</a>';
+        echo '<a href="'. HTML_PATH_ROOT .'rss.xml" target="_blank">rss</a>';
     }
 ?>
 </nav>
