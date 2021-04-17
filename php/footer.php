@@ -3,16 +3,16 @@
 <nav>
     <!-- Previous button -->
     <?php if (Paginator::showPrev()): ?>
-        <a style="float:left;" href="/<?php echo Paginator::previousPageUrl() ?>" tabindex="-1"> <-- Précédent </a>
+        <a style="font-size:120%;" href="<?php echo Paginator::previousPageUrl() ?>" title="après" tabindex="-1">☼</a>
     <?php else: ?>
-        <span style="float:left;"> <-- Précédent </span>
+        <span style="font-size:120%;"> </span>
     <?php endif; ?>
 
     <!-- Next button -->
     <?php if (Paginator::showNext()): ?>
-        <a style="float:right;" href="/<?php echo Paginator::nextPageUrl() ?>" tabindex="-1"> Suivant --> </a>
+        <a style="font-size:150%;" href="<?php echo Paginator::nextPageUrl() ?>" title="avant" tabindex="-1">☽</a>
     <?php else: ?>
-        <span style="float:right;"> Suivant --> </span>
+        <span style="font-size:150%;"> </span>
     <?php endif; ?>
 </nav>
 <br />

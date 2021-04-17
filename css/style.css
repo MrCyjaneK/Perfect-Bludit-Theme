@@ -1,19 +1,27 @@
+/* basics */
+
 body {
     margin:40px auto;            /* Center it */
     background-color: #efefef;
     color: #111;                
-    font-size: 120%;             /* Smaller type works well for print, not the screen. */
+    font-size: 110%;             /* Smaller type works well for print, not the screen. */
     max-width:650px;             /* If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book. */
-    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    /* font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; */
+    /* font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif; */
+    /* font-family: Segoe UI, Frutiger, Dejavu Sans, Helvetica Neue, Arial, sans-serif; */
+    /* font-family: Helvetica Neue,Helvetica,Arial,sans-serif; */
+    /* font-family: Arial,Helvetica Neue,Helvetica,sans-serif; */
+    font-family: 'Bookman Old Style', serif;
     padding:1em
 }
+
 a {
    text-decoration: none;        /* No <strike>*/
 } 
-a:link    {color: #111;}   /* unvisited link */
-a:visited {color: #111;}   /* visited link */
-a:hover   {color: #111;}         /* mouse over link */
-a:active  {color: #111;}          /* selected link */
+a {color: #444;}   /* unvisited link */
+a:visited {color: #444;}   /* visited link */
+a:hover   {color: #444;}         /* mouse over link */
+a:active  {color: #444;}          /* selected link */
 pre {
     white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -21,3 +29,42 @@ pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+
+/* title */
+
+#title a {color: #444}
+#title a:hover {color: #444}
+
+
+/* article */
+
+article {
+    margin-bottom: 4em; /* Margin for phone */
+}
+
+article p { /* paragraph */
+    line-height: 1.5;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+article p a { /* link inside posts */
+    color: #999;
+    text-decoration: none;
+}
+article p a:hover { 
+    color: #999;
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+	text-align: center;
+}
+
+/* other */
+.likebg {color:#efefef; font-size: small;} /* hidden text */

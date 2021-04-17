@@ -37,9 +37,9 @@
     }
 ?>
 </nav>
-<h1>
+<div id="title"><h1>
     <a href="<?= HTML_PATH_ROOT ?>" title="<?php echo $site->title() ?>"><?php echo $site->title() ?></a>
-</h1>
+</h1></div>
 
 <p><?php echo $site->slogan() ?></p>
 <br>
