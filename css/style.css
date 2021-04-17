@@ -2,7 +2,7 @@
 
 body {
     margin:40px auto;            /* Center it */
-    background-color: #efefef;
+    background-color: #F3EFD6;
     color: #111;                
     font-size: 110%;             /* Smaller type works well for print, not the screen. */
     max-width:650px;             /* If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book. */
@@ -67,4 +67,4 @@ footer {
 }
 
 /* other */
-.likebg {color:#efefef; font-size: small;} /* hidden text */
+.likebg {color:#F3EFD6; font-size: small;} /* hidden text */
