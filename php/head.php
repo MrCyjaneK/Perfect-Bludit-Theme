@@ -4,5 +4,5 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <?php echo Theme::metaTags('title'); ?>
   <?php echo Theme::css('css/style.css'); ?>
-  <?php echo Theme::favicon('img/favicon.png'); ?>
+  <?php echo Theme::favicon('img/favicon.ico'); ?>
   <?php Theme::plugins('siteHead'); ?>

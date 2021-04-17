@@ -42,7 +42,7 @@
 </h1>
 
 <p><?php echo $site->slogan() ?></p>
-<hr />
+<br>
 <center>
     <?php $i = -1; ?>
     <?php foreach ($categories->db as $key => $value) { ?>
@@ -51,4 +51,4 @@
        <?php if ($i % 3 != 2 && $i+1 != count($categories->db)) echo '|'; ?>
     <?php } ?>
 </center>
-<hr />
+<br>

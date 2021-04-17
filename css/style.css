@@ -1,18 +1,19 @@
 body {
     margin:40px auto;            /* Center it */
-    background-color: black;
-    color: white;                
-    font-size: 150%;             /* Smaller type works well for print, not the screen. */
+    background-color: #efefef;
+    color: #111;                
+    font-size: 120%;             /* Smaller type works well for print, not the screen. */
     max-width:650px;             /* If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book. */
-    font-family: monospace;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    padding:1em
 }
 a {
    text-decoration: none;        /* No <strike>*/
 } 
-a:link    {color: chartreuse;}   /* unvisited link */
-a:visited {color: chartreuse;}   /* visited link */
-a:hover   {color: cyan;}         /* mouse over link */
-a:active  {color: red;}          /* selected link */
+a:link    {color: #111;}   /* unvisited link */
+a:visited {color: #111;}   /* visited link */
+a:hover   {color: #111;}         /* mouse over link */
+a:active  {color: #111;}          /* selected link */
 pre {
     white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */

@@ -17,24 +17,29 @@
     <article>
         <?php Theme::plugins('pageBegin'); ?>
         <h2><a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a></h2>
-        <small><?php echo $page->date(); ?></small> |
+        
         <?php if ($page->category()):?>
             <a href="<?php echo DOMAIN_CATEGORIES.$page->categoryKey() ?>" rel="tag"><?php echo $page->category() ?></a>
-        <?php endif?><br />
-        <?php
-        if(strlen($page->description())>0 ){
-            echo $page->description();
-        } else {
-            $max = 333;
-            $all = explode(' ', substr($page->content(false), 0, $max));
-            array_pop($all);
-            echo implode(' ', $all);
-            if (strlen($page->content(false)) > $max) {
-                echo "... ";
-            }
-        }?>
-        <a style="float:right;" href="<?php echo $page->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
+        <?php endif?>
+         <!-- Page description -->
+				<?php if ($page->description()): ?>
+				<p class="page-description"><?php echo $page->description(); ?></p>
+				<?php endif ?>
+
+				<!-- Page content until the pagebreak -->
+				<div>
+				<?php echo $page->contentBreak(); ?>
+				</div>
+
+				<!-- Shows "read more" button if necessary -->
+				<?php if ($page->readMore()): ?>
+				<div class="text-right pt-3">
+				<a style="float:right;" href="<?php echo $page->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
+				</div>
+    
+       
+				<?php endif ?>
         <?php Theme::plugins('pageEnd'); ?>
     </article>
-    <hr />
+    <br>
 <?php endforeach; ?>
