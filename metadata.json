@@ -1,11 +1,10 @@
 {
-    "author": "Czarek Nakamoto",
-    "email": "https://mrcyjanek.net",
-    "website": "https://oldpc.mrcyjanek.net/blog/",
+    "author": "Herminien",
+    "email": "https://blog.pcet.link/contact/",
+    "website": "https://pcet.link",
     "version": "1.0.0",
-    "releaseDate": "2020-05-16",
+    "releaseDate": "2021-04-16",
     "license": "WTFPL",
     "compatible": "3.x",
-    "notes": "It couldn't be more minimal"
+    "notes": "My minimalist bludit theme"
 }
-
