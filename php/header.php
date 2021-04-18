@@ -25,7 +25,7 @@
         <a href="<?php echo $site->mastodon() ?>" target="_blank">mastodon</a><br />
     <?php endif ?>
     <?php if ($site->dribbble()): ?>
-        <a href="<?php echo $site->dribbble() ?>" target="_blank">dribbble</a><br />
+        <a href="<?php echo $site->dribbble() ?>" target="_blank">dribble</a><br />
     <?php endif ?>
     <?php if ($site->VK()): ?>
         <a href="<?php echo $site->VK() ?>" target="_blank">VK</a><br />
@@ -35,8 +35,8 @@
     if (pluginActivated($className)) {
         echo '<a href="'. HTML_PATH_ROOT .'rss.xml" target="_blank">rss</a>';
     }
-?>
-</nav>
+?><br />
+        <a href="/s-abonner">s'abonner</a><br /></nav>
 <div id="title"><h1>
     <a href="<?= HTML_PATH_ROOT ?>" title="<?php echo $site->title() ?>"><?php echo $site->title() ?></a>
 </h1></div>

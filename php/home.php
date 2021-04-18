@@ -16,7 +16,7 @@
 <?php foreach ($content as $page): ?>
     <article>
         <?php Theme::plugins('pageBegin'); ?>
-        <h2><a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a></h2>
+        <h2 class="title"><a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a></h2>
         
          <!-- Page description -->
 				<?php if ($page->description()): ?>
