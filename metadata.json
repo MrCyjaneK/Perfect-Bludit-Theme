@@ -2,10 +2,10 @@
     "author": "Czarek Nakamoto",
     "email": "https://mrcyjanek.net",
     "website": "https://oldpc.mrcyjanek.net/blog/",
-    "version": "1.0.0",
-    "releaseDate": "2020-05-16",
+    "version": "2.0.0",
+    "releaseDate": "2024-08-01",
     "license": "WTFPL",
-    "compatible": "3.x",
+    "compatible": "3.15",
     "notes": "It couldn't be more minimal"
 }
 

@@ -1,14 +1,21 @@
 body {
     margin:40px auto;            /* Center it */
     background-color: black;
-    color: white;                
+    color: white;
     font-size: 150%;             /* Smaller type works well for print, not the screen. */
     max-width:650px;             /* If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book. */
     font-family: monospace;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+hr {
+   border: none;
+   height: 2px;
+   background-color: darkgrey;
 }
 a {
    text-decoration: none;        /* No <strike>*/
-} 
+}
 a:link    {color: chartreuse;}   /* unvisited link */
 a:visited {color: chartreuse;}   /* visited link */
 a:hover   {color: cyan;}         /* mouse over link */

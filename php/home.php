@@ -17,23 +17,16 @@
     <article>
         <?php Theme::plugins('pageBegin'); ?>
         <h2><a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a></h2>
-        <small><?php echo $page->date(); ?></small> |
-        <?php if ($page->category()):?>
-            <a href="<?php echo DOMAIN_CATEGORIES.$page->categoryKey() ?>" rel="tag"><?php echo $page->category() ?></a>
+        <small><?php echo $page->date(); ?></small>&nbsp;<small>(<?php echo $L->get('Reading time') . ': ' . $page->readingTime() ?>)</small>
+        <?php if ($page->category()):?> | <a href="<?php echo DOMAIN_CATEGORIES.$page->categoryKey() ?>" rel="tag"><?php echo $page->category() ?></a>
         <?php endif?><br />
-        <?php
-        if(strlen($page->description())>0 ){
-            echo $page->description();
-        } else {
-            $max = 333;
-            $all = explode(' ', substr($page->content(false), 0, $max));
-            array_pop($all);
-            echo implode(' ', $all);
-            if (strlen($page->content(false)) > $max) {
-                echo "... ";
-            }
-        }?>
+        <!-- Breaked content -->
+        <?php echo $page->contentBreak(); ?>
+        <!-- "Read more" button -->
+        <?php if ($page->readMore()) : ?>
         <a style="float:right;" href="<?php echo $page->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
+        <?php endif ?>
+        <!-- Load Bludit Plugins: Page End -->
         <?php Theme::plugins('pageEnd'); ?>
     </article>
     <hr />
